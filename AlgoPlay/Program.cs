@@ -45,6 +45,23 @@ namespace AlgoPlay
                 Console.WriteLine(sorted.Item1 + ", " + sorted.Item2);
                 Console.WriteLine(stopWatch.Elapsed);
             }
+
+            stopWatch.Reset();
+            Console.WriteLine("Array");
+
+            stopWatch.Start();
+
+            var arrayed = FindTwoSumWithArraySort(list.ToArray(), sumToFind);
+
+            stopWatch.Stop();
+
+            if (sorted != null)
+            {
+                Console.WriteLine(arrayed.Item1 + ", " + arrayed.Item2);
+                Console.WriteLine(stopWatch.Elapsed);
+            }
+
+            
         }
 
         private static Tuple<int,int> FindTwoSum(List<int> list, int sum)
@@ -68,7 +85,7 @@ namespace AlgoPlay
         {
             int left, right;
             var originalList = new List<int> (list);
-
+           
             QuickSort(list, 0, list.Count - 1);
 
             left = 0;
@@ -95,7 +112,39 @@ namespace AlgoPlay
            
             return null;
         }
-        
+
+        private static Tuple<int, int> FindTwoSumWithArraySort(int [] arrayInt, int sum)
+        {
+            int left, right;
+            var originalList = new List<int>(arrayInt);
+
+            arrayInt.ToList().Sort();
+
+            left = 0;
+            right = arrayInt.Length - 1;
+            while (left < right)
+            {
+                if (arrayInt[left] + arrayInt[right] == sum)
+                {
+                    return new Tuple<int, int>(originalList.IndexOf(arrayInt[left]), originalList.IndexOf(arrayInt[right]));
+                }
+
+                else if (arrayInt[left] + arrayInt[right] < sum)
+                {
+                    left++;
+                }
+
+                else
+                {
+                    right--;
+                }
+                // A[i] + A[j] > sum 
+
+            }
+
+            return null;
+        }
+
         private static void QuickSort(List<int> list, int left, int right)
         {
             if (left < right)
