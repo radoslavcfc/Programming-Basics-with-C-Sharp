@@ -5,11 +5,9 @@ VisualStudioVersion = 16.0.29709.97
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MMLogo[LoopDraw]", "MMLogo[LoopDraw]\MMLogo[LoopDraw].csproj", "{63BF9F68-3C1C-4227-87DA-4F4B23456641}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BrothersInTheBar[Algo]", "BrothersInTheBar\BrothersInTheBar[Algo].csproj", "{83C4E01E-24DA-4ACF-A6BF-9DE6024AD567}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NumberToAWord", "NumberToAWord\NumberToAWord.csproj", "{EA64BAC9-0179-4DFD-9D04-440CC46F5F0E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlgoPlay", "AlgoPlay\AlgoPlay.csproj", "{D75143E2-2FB5-4AF3-BDD5-00154DD761F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlgoPlay", "AlgoPlay\AlgoPlay.csproj", "{D75143E2-2FB5-4AF3-BDD5-00154DD761F3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,10 +19,6 @@ Global
 		{63BF9F68-3C1C-4227-87DA-4F4B23456641}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{63BF9F68-3C1C-4227-87DA-4F4B23456641}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{63BF9F68-3C1C-4227-87DA-4F4B23456641}.Release|Any CPU.Build.0 = Release|Any CPU
-		{83C4E01E-24DA-4ACF-A6BF-9DE6024AD567}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{83C4E01E-24DA-4ACF-A6BF-9DE6024AD567}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{83C4E01E-24DA-4ACF-A6BF-9DE6024AD567}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{83C4E01E-24DA-4ACF-A6BF-9DE6024AD567}.Release|Any CPU.Build.0 = Release|Any CPU
 		{EA64BAC9-0179-4DFD-9D04-440CC46F5F0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{EA64BAC9-0179-4DFD-9D04-440CC46F5F0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA64BAC9-0179-4DFD-9D04-440CC46F5F0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
